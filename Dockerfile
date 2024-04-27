@@ -8,6 +8,6 @@ ENV NAME WORLD
 
 FROM gcr.io/distroless/python3
 
-COPY --from==builder /app/app 
+COPY --from=builder /app /app 
 
 CMD ["fib_series.py"]
